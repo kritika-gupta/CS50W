@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="tablestyles.css">
+    <link rel="stylesheet" href="navigation.css">
+    <title>Similar Artists</title>
+    <style>
+        .main-body{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: rgb(232, 224, 243);
+        }
+        h2{
+            text-align: center;
+        }
+        .artist-list{
+            padding-top: 20px;
+            text-align: center;
+            font-size: 25px;
+
+        }
+        .artist::after{
+            content: " (Hover to see image)";
+            font-size: 12px;
+            color: darkred;
+        }
+        .artist:hover + .artist-img{
+            display: block;
+            
+        }
+
+        .artist-img{
+
+            display: none;
+        }
+
+        .artist-img img{
+            max-width:500px;
+            max-height:500px;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="navigation">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <a href="./index.html">Home</a>            
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <a href="./discography.html">Discography</a>            
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <a href="./gallery.html">Gallery</a>            
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <a href="./similar_artists.html">Similar Artists</a>            
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <h2>Artists you may enjoy if you love The Beatles!</h2>
+        <div class="artist-list">
+            <ul>
+                <li class="artist">Queen</li>
+                <li class="artist-img" ><img src="./queen.png" alt=""></li>
+            </ul>
+            <ul>
+                <li class="artist">The Rolling Stones</li>
+                <li class="artist-img" ><img src="./rollingstones.jpeg" alt=""></li>
+            </ul>
+        </div>
+            
+    </div>
+        
+
+</body>
+</html>
