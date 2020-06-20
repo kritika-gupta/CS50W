@@ -4,32 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Gallery</title>
-    <style>
-        .gallery{
-            background-color: lightgray;
-            margin-top: 20px;
-        }
-        .fbox{
-            
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px;
-            margin: 20px;
 
-        }
-        img{
-            width: 280px;
-            margin: 20px;
-            border: 10px solid white;
-        }
-        .header{
-            text-align: center;
-            padding-top: 40px;
-        }
-
-    </style>
 </head>
 <body>
     <div class="navigation">
@@ -48,17 +25,20 @@
             </div>
         </div>
     </div>
-    <div class="gallery">
-        <div class="header">
+    <div class="row">
+        <div id="gallery" class="col-12" >
+
             <h2>Gallery</h2>
-        </div>
-        <div class="fbox">
-            <img src="../images/img1.jpeg" alt="">
-            <img src="../images/img2.jpeg" alt="">
-            <img src="../images/img3.jpeg" alt="">
-            <img src="../images/img4.jpeg" alt="">
-        </div>
+
+            <div class="fbox">
+                <img src="../images/img1.jpeg" alt="">
+                <img src="../images/img2.jpeg" alt="">
+                <img src="../images/img3.jpeg" alt="">
+                <img src="../images/img4.jpeg" alt="">
+            </div>
+        </div>  
     </div>
+        
     
 </body>
 </html>

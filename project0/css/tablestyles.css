@@ -1,5 +1,6 @@
 table{
     margin: auto;
+    margin-top: 20px;
     width: 80%;
     border: 2px solid black;
     border-collapse: collapse;
@@ -7,4 +8,12 @@ table{
 }
 td, th{
     border: 2px solid black;
+}
+
+table[id='bio-table']{
+    color: rgb(71, 52, 192);
+}
+table[id='members']{
+    color: rgb(167, 10, 23);
+
 }
