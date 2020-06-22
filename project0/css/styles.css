@@ -54,20 +54,27 @@ h2 {
 }
 
 #gallery .fbox {
+  justify-content: center;
+  vertical-align: middle;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
-  margin: 20px;
+  margin: auto;
 }
 #gallery .fbox img {
-  width: 280px;
-  margin: 20px;
-  border: 10px solid white;
+  width: 200px;
+  margin: 50px;
+}
+
+#imgs-carousel .carousel-inner .carousel-item {
+  text-align: center;
+}
+#imgs-carousel .carousel-inner .carousel-item img {
+  width: 1000px;
 }
 
 #similar-artists, #gallery, #discography {
   display: box;
-  padding-top: 30px;
+  padding-top: 20px;
   background-color: lightgray;
 }
 
