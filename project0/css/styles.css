@@ -99,9 +99,7 @@ h2 {
 }
 
 .artist-img img {
-  max-width: 500px;
-  max-height: 500px;
-  width: auto;
+  width: 700px;
   height: auto;
 }
 
