@@ -4,12 +4,14 @@ h2{
     text-align: center;
 }
 
+// Sources from where content is taken
 .sources{
     display: block;
     text-align: right;
     font-style: italic;
 }
 
+// Main header on the front page
 #heading {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -33,11 +35,13 @@ h2{
     }
 }
 
+// Band biographical information on main page
 #band-bio{
     text-align: justify;
     padding: 20px;
 }
 
+// Poster on main page
 #posterimg{
     width: 600px;
     margin: auto;
@@ -45,19 +49,23 @@ h2{
     padding: 20px;
 }
 
-
+// Both the columns of main content on main page
 #posterbox, #textbox{
     background-color: $bgcolor;
     border: 2px dashed black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+// Navigation bar on each page
 .navigation > .row > div {
     border: 2px solid black;
     text-align: center;
 }
 
+// Gallery page
 #gallery{
+
+    // flex box for individual images
     .fbox{
         justify-content: center;
         vertical-align: middle;
@@ -69,84 +77,93 @@ h2{
             width: 200px;
             margin: 50px;
         }
-    
     }
-}
 
-#imgs-carousel{
-
-    .carousel-inner{
-        .carousel-item{
-            text-align: center;
-            img{
-                width: 1000px;
+    // image carousel for band images
+    #imgs-carousel{
+        .carousel-inner{
+            .carousel-item{
+                text-align: center;
+                img{
+                    width: 1000px;
+                }
             }
         }
     }
-
 }
 
+// background for all pages except front page
 #similar-artists, #gallery, #discography{
     display: box;
     padding-top: 20px;
     background-color: $bgcolor;
 }
 
-.artist-list{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 25px;
-
-}
-.artist::after{
-    content: " (Hover to see image)";
-    font-size: 18px;
-    color: darkred;
-}
-.artist:hover + .artist-img{
-    display: block;
+// similar artists page main content
+#similar-artists{
+    .artist-list{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 25px;
+    }
     
-}
-
-.artist-img{
-
-    display: none;
-}
-
-.artist-img img{
-    // max-width:500px;
-    // max-height:500px;
-    width: 700px;
-    height: auto;
-}
-
-%listlook{
-
-    @media (max-width: 1000px){
-        width: 100%;
-        font-weight: bolder;
+    // add content after each band's name
+    .artist::after{
+        content: " (Hover to see image)";
+        font-size: 18px;
+        color: darkred;
     }
-    @media (min-width: 999px){
-        width: 50%;
+    
+    // hover feature to see band image
+    .artist:hover + .artist-img{
+        display: block;
     }
-    padding: 10px;
-    text-align: center;
-    border: 2px dashed black;
-    margin: auto;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    // hide image when not hovering
+    .artist-img{
+        display: none;
+    }
+    
+    .artist-img img{
+        width: 700px;
+        height: auto;
+    }
 }
 
+// discography page
 #discography{
+
+    // inheritance used for list of albums and list of songs
+    %listlook{
+
+        // media queries for width of screen
+        @media (max-width: 1000px){
+            width: 100%;
+            font-weight: bolder;
+        }
+        @media (min-width: 999px){
+            width: 50%;
+        }
+        padding: 10px;
+        text-align: center;
+        border: 2px dashed black;
+        margin: auto;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    // list of album names
     .albums{
         @extend %listlook;
         background-color: lightgreen;
     }
 
+    // list of song names
     .songs{
         @extend %listlook;
         background-color: lightskyblue;
     }
 
+    // titles of lists
     span{
         font-size: larger;
     }

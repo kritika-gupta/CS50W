@@ -49,4 +49,4 @@ The project is webpage about the band The Beatles, and uses HTML, CSS and Bootst
         - border and border-collapse
         - attribute selector 
 
-            
+3. Responsiveness - All pages, inclusing navigation bars and carousel images are responsive to changing screen size.  

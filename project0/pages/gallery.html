@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Bootstrap 4-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <!-- Link custom stylesheet -->
     <link rel="stylesheet" href="../css/styles.css">
 
+    <!-- Other scripts required for carousel to animate -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -15,6 +20,8 @@
 
 </head>
 <body>
+
+    <!-- Navigation Bar at the top of the page -->
     <div class="navigation">
         <div class="row">
             <div class="col-lg-3 col-sm-6">
@@ -31,11 +38,14 @@
             </div>
         </div>
     </div>
+
+    <!-- Gallery of images -->
     <div class="row">
         <div id="gallery" class="col-12" >
 
             <h2>Gallery</h2>
 
+            <!-- 4 Individual photos in a Flexbox-->
             <div class="fbox">
                 <img src="../images/jl.jpg" alt="">
                 <img src="../images/pm.jpg" alt="">
@@ -43,7 +53,7 @@
                 <img src="../images/gh.jpg" alt="">
             </div>
               
-            
+            <!-- Carousel of band images-->
             <div class="carousel slide" data-ride="carousel" id="imgs-carousel">
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
@@ -88,18 +98,13 @@
                     <span class="carousel-control-prev-icon"></span>
                 </a>
                 <a href="#imgs-carousel" class="carousel-control-next" data-slide="next" style="color: black;">
-                    
                     <span class="carousel-control-next-icon"></span>
                     Next Image
                 </a>
-            </div>
-            
                 
-        
+            </div>
         </div>  
     </div>
 
-
-    
 </body>
 </html>
