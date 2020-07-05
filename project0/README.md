@@ -1,4 +1,6 @@
-# Project 0
+# Project 0 
+### Kritika Gupta
+### Github username : kritika-gupta
 
 CS50W : Web Programming with Python and JavaScript
 
