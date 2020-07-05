@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+{% endblock %}
+
+{%block body %}
+
+    {% if username %}
+        <p>Welcome, {{username}}! </p>
+        
+        <a href="{{ url_for('logout') }}">Click here to logout.</a>   
+
+    {% else %}
+        <p>You are not logged in yet.</p>
+        <a href="{{ url_for('login') }}">Click here to login.</a>
+    {% endif %}
+
+{% endblock %}
