@@ -1,0 +1,3 @@
+[submodule "books-catalogue"]
+	path = books-catalogue
+	url = https://github.com/kritika-gupta/books-catalogue
