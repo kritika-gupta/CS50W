@@ -1,6 +1,7 @@
-# Project 0 (https://kritika-gupta.github.io/CS50W/project0/pages/index.html)
+# Project 0 
 ### Kritika Gupta
 ### Github username : kritika-gupta
+#### Hosted at : (https://kritika-gupta.github.io/CS50W/project0/pages/index.html)
 
 CS50W : Web Programming with Python and JavaScript
 
