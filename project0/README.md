@@ -1,4 +1,4 @@
-# Project 0 
+# Project 0 (https://kritika-gupta.github.io/CS50W/project0/pages/index.html)
 ### Kritika Gupta
 ### Github username : kritika-gupta
 
